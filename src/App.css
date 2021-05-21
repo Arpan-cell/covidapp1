@@ -1,0 +1,114 @@
+body {
+  font-family: arial;
+}
+.caption {
+  background-image: linear-gradient(#6b5b95);
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 ;
+  text-align: center;
+}
+.tr {
+  display: flex;
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+}
+.td {
+  width: 20%;
+  border: 1px solid #777;
+  padding: 10px;
+}
+.th {
+  display: flex;
+  background: grey;
+  color: white;
+}
+.tr:nth-of-type(even) {
+  background: #efefef;
+}
+
+@media (max-width: 600px), (max-device-width: 600px) {
+  .caption {
+    background-image: url(https://www.clydeco.com/getattachment/595ba689-3a64-4667-be77-71792046a9ff/facebook-image?variant=introbannerdesktopvarient)
+  }
+
+  .th {
+    display: none;
+  }
+  .tr {
+    display: block;
+    margin-bottom: 25px;
+    background: transparent !important;
+  }
+  .td {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+  .td:before {
+    font-weight: bold;
+    display: block;
+    width: 50%;
+  }
+  .td:nth-of-type(1) {
+    background: mediumblue;
+    color: white;
+    font-weight: bold;
+  }
+  /* .td:nth-of-type(1):before {
+    content: "State:";
+    padding-right: 15px;
+  } */
+  .td:nth-of-type(2):before {
+    content: "Active:";
+    color: white;
+    padding-right: 15px;
+  }
+  .td:nth-of-type(3):before {
+    content: "Confirmed:";
+    color: white;
+    padding-right: 15px;
+  }
+  .td:nth-of-type(4):before {
+    content: "Deaths:";
+    padding-right: 15px;
+  }
+  .td:nth-of-type(5):before {
+    content: "Recovered:";
+    color: white;
+    padding-right: 18px;
+  }
+  .td:nth-of-type(6):before {
+    content: "Updated Time:";
+    color: white;
+    padding-right: 15px;
+  }
+}
+
+@media (max-device-width: 600px) {
+  .table {
+    background-image: url(https://www.clydeco.com/getattachment/595ba689-3a64-4667-be77-71792046a9ff/facebook-image?variant=introbannerdesktopvarient);
+
+    font-size: 2rem;
+  }
+  .td {
+    padding: 17px;
+  }
+}
+
+.full {
+  color: white;
+  background-image: url(https://www.cslbehring.com/-/media/shared/vita/covid19-virus-on-orange-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption span h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 25px 0;
+  
+}
